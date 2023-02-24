@@ -1,0 +1,66 @@
+body {
+    background-color: bisque;
+}
+
+.raudona{
+    background-color: red;
+}
+.melyna{
+    background-color: blue;
+}
+.zalia{
+    background-color: green;
+}
+.violetine{
+ background-color: purple;
+}
+
+.vio{
+    background-color: purple;
+}
+.container>div {
+    border-radius: 5px; 
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, 100px);
+     grid-template-areas: 
+     "r r r r"
+     "m m z z "
+     "m m v w"
+}
+/*
+.raudona{
+    grid-column: 1 / span 4;
+}
+.melyna{
+    grid-column: 1 / span 2;
+    grid-row:2/ span 3;
+}
+.zalia{
+    grid-column: 3 / 5 ;
+}
+.violetine{
+    grid-column: 3 / 4;
+}
+.vio{
+    grid-column:4 / 5 ;
+}
+*/
+.raudona{
+    grid-area:r;
+}
+.melyna{
+    grid-area: m;
+}
+.zalia{
+    grid-area: z;
+}
+.violetine{
+    grid-area: v;
+}
+.vio{
+    grid-area: w;
+}
